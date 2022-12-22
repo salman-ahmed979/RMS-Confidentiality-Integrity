@@ -1,5 +1,13 @@
 # RMS-Confidentiality-Integrity
- Developed a record management system that ensure the integrity and confidentiality in the system. 
+ Developed a record management system that ensure the integrity and confidentiality in the system. This is my seven (7th) semester of BS Software Engineering project for the course CS-3002 Information Security presented to Dr.Fahad Samad.
+ 
+ # Tech
+ * React JS
+ * Node JS + Express JS
+ * Bcrypt (Hashing), JsonWebToken (JWT) Authentication, Node-Forge (Digital Certificate + Certificate Request), Crypto JS (Asymmetric Key Pair + Digital Signature)
+ * NodeMailer (sending email)
+ * MySql
+ * Postman for API Testing
 
 # Introduction
 A user details is an essential element that needs to be validated to prevent attack,manipulating and breaching of the data. 
@@ -33,3 +41,16 @@ below system diagram displays the communication between these entities.
 
 
 The responsibility of the Application Server is to handle all the request from the users. It also stores all the information in the database. The Application Server will pass the request of the creation of Asymmetric key to the Client Server. The Client Server is also responsible for creating the Certificate Request (CSR) and provide this request to the Certificate Authority (CA). The CA’s Server will issue a Certificate to the Client Server. The Client Server will create a Digital Signature. It will provide the Digital Signature and Digital Certificate to the Application Server. The Application Server will verify the Digital Signature provided by the Client Server and upon verification, it will then obtain the public key and verify the Digital Signature. After verification, it will then update the record.
+
+# Features
+* Signup
+* Login
+* Add Student Details
+* View Students Details
+* Edit Student Record
+
+# Conclusion
+The secure record management is necessary in the organization that could maintain the integrity and confidentiality in the system and does not allow any illegal and unauthorize acccess of the system by any other party. Therefore, such a secure system is a must in an organization to protect their data from data breach and unauthorized data access.
+
+**All the details are mentioned in the report folder containing Project Report File.**
+
